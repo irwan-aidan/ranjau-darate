@@ -53,7 +53,7 @@ cat > /etc/trojan-go-mini/config.json << END
 {
     "run_type": "server",
     "local_addr": "0.0.0.0",
-    "local_port": 443, # Port Untuk Trojan-Go
+    "local_port": 2053, # Port Untuk Trojan-Go
     "remote_addr": "127.0.0.1",
     "remote_port": 85, # Port Nginx / Apache ( Wajib Ada )
     "password": [
