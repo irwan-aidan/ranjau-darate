@@ -43,7 +43,7 @@ wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ins-vt.sh 
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
-wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ins-trojango1.sh && chmod +x ins-trojango1.sh && screen -S Trojan-go1 ./ins-trojango1.sh
+wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/ins-trojango1.sh && chmod +x ins-trojango1.sh && screen -S Trojan-go1 ./ins-trojango1.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
