@@ -285,6 +285,7 @@ netfilter-persistent reload
 apt -y install ruby
 gem install lolcat
 apt -y install figlet
+apt -y install dos2unix
 
 # download script
 cd /usr/bin
