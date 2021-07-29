@@ -334,6 +334,7 @@ wget -O cfd "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/cf
 wget -O cff "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/cff.sh"
 wget -O cfh "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/cfh.sh"
 wget -O autoreboot "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/autoreboot.sh"
+wget -O add-trgo "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/add-trgo.sh"
 chmod +x add-host
 chmod +x usernew
 chmod +x trial
@@ -378,6 +379,8 @@ chmod +x cfd
 chmod +x cff
 chmod +x cfh
 chmod +x autoreboot
+chmod +x add-trgo
+dos2unix add-trgo
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
