@@ -153,7 +153,7 @@ cat > /etc/trojan-go/config.json << END
 
 END
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2096 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2096 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p udp --dport 2096 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
