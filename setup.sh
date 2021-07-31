@@ -43,7 +43,7 @@ wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ins-vt.sh 
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
-wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ins-trojango.sh && chmod +x ins-trojango.sh && screen -S Trojan-go ./ins-trojango.sh
+wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/ins-trojango1.sh && chmod +x ins-trojango1.sh && screen -S Trojan-go1 ./ins-trojango1.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -101,7 +101,7 @@ echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - V2RAY Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS    : 8880"  | tee -a log-install.txt
 echo "   - Trojan                  : 2087"  | tee -a log-install.txt
-echo "   - TrojanGO               : 2096"  | tee -a log-install.txt
+echo "   - TrojanGO                : 2096"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
 echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
