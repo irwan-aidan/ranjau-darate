@@ -30,7 +30,7 @@ chmod +x /usr/local/bin/trojan-go
 # Service
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
-Description=Trojan-Go - An unidentifiable mechanism that helps you bypass GFW
+Description=Trojan-Go 
 Documentation=https://p4gefau1t.github.io/trojan-go/
 After=network.target nss-lookup.target
 
@@ -79,8 +79,8 @@ cat > /etc/trojan-go/config.json << END
     "session_ticket": true,
     "reuse_session": true,
     "plain_http_response": "",
-    "fallback_addr": "",
-    "fallback_port": 0,
+    "fallback_addr": "127.0.0.1",
+    "fallback_port": 81,
     "fingerprint": "firefox"
   },
   "tcp": {
