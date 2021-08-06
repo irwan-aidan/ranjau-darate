@@ -195,6 +195,10 @@ connect = 127.0.0.1:22
 accept = 442
 connect = 127.0.0.1:1194
 
+[ws-stunnel]
+accept = 2096
+connect = 700
+
 END
 
 # make a certificate
@@ -291,7 +295,7 @@ apt -y install dos2unix
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/about.sh"
-wget -O usernew "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/usernew.sh"
+wget -O usernew "https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/hapus.sh"
 wget -O member "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/member.sh"
