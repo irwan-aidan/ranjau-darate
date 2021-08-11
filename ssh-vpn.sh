@@ -218,7 +218,7 @@ apt-get install sslh -y
 
 #konfigurasi
 #port 443 to 77 and 777
-wget -O /etc/default/sslh "https://raw.githubusercontent.com/4hidessh/baru/main/sslh-conf"
+wget -O /etc/default/sslh "https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/sslh.conf"
 service sslh restart
 
 
