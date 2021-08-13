@@ -12,7 +12,7 @@ clear
 
 	#Choose External Port
 	echo "Masukan port yang mau di open"
-	read -r "ex port"
+	read -r "extport"
 
 	#Find vpn address
 	echo "Masukan IP VPS yang ingin Anda port pointing"
@@ -20,7 +20,7 @@ clear
 
 	#Find Internal port
 	echo "Masukan port internal"
-	read "in port"
+	read "intport"
 
 	#What protocol
 
