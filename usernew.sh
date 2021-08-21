@@ -53,7 +53,7 @@ echo -e "Host              : $IP"
 echo -e "OpenSSH           : 22"
 echo -e "Dropbear          : 109, 143"
 echo -e "SSL/TLS           :$ssl"
-echo -e "SSLH              : 443
+echo -e "SSLH              : 443"
 echo -e "Port Squid        :$sqd"
 echo -e "Port WS Http      : 2095"
 echo -e "Port Ws Ovpn      : 2082"
