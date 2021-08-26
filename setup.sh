@@ -31,6 +31,8 @@ wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/cf.sh && c
 #install ssh ovpn
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/weleh.sh && chmod +x weleh.sh && screen -S weleh ./weleh.sh
+wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ohp.sh && chmod +x ohp.sh && screen -S ohp ./ohp.sh
 #install ssr
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
@@ -42,8 +44,6 @@ wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ins-vt.sh 
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
-wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/weleh.sh && chmod +x weleh.sh && ./weleh.sh
-wget https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 #wget http://lnd.red-flat.my.id:81/ins-trojango.sh && chmod +x ins-trojango.sh && screen -S Trojan-go ./ins-trojango.sh
 
 rm -f /root/ssh-vpn.sh
