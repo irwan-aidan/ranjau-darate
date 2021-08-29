@@ -356,6 +356,7 @@ wget "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/renew-trg
 wget -O trojangoo "https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/trojangoo.sh"
 wget -O xp-trgo "https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/xp-trgo.sh"
 wget -O point "https://raw.githubusercontent.com/bokir-tampan/ranjau-darat/main/pointing.sh"
+wget -O servive "https://raw.githubusercontent.com/bokir-tampan/ranjau-darate/main/service.sh"
 chmod +x add-host
 chmod +x usernew
 chmod +x trial
@@ -411,6 +412,7 @@ dos2unix renew-trgo
 chmod +x trojangoo
 chmod +x xp-trgo
 chmod +x point
+chmod +x service
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
