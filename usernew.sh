@@ -68,6 +68,7 @@ echo -e "Port OHP OVPN     : 8383"
 echo -e "OpenVPN        : TCP $ovpn http://$IP:81/client-tcp-1194.ovpn"
 echo -e "OpenVPN        : UDP $ovpn2 http://$IP:81/client-udp-2200.ovpn"
 echo -e "OpenVPN        : SSL 442 http://$IP:81/client-tcp-ssl.ovpn"
+echo -e "OHP Config     : OHP 8383 http://$MYIP:81/tcp-ohp.ovpn
 echo -e "badvpn         : 7100-7300"
 echo -e "==============================="
 echo -e "PAYLOAD"
