@@ -27,7 +27,7 @@ cat <<EOF > /etc/trojan-go/config.json
     "remote_addr": "127.0.0.1",
     "remote_port": 81,
     "log_level": 1,
-    "log_file": "/var/log/trojan-go.log",
+    "log_file": "",
     "password": [
         "$uuid"
     ],
