@@ -139,3 +139,35 @@ echo -e " Nginx             : Nginx Service is "$green"running"$NC""
 else                                                                                    
 echo -e " Nginx             : Nginx Service is "$red"not running (Error)"$NC""      
 fi
+status="$(systemctl show ws-stunnel.service --no-page)"                                      
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)                     
+if [ "${status_text}" == "active" ]                                                     
+then                                                                                    
+echo -e " Ws-stunnel        : Ws-stunnel Service is "$green"running"$NC""                
+else                                                                                    
+echo -e " Ws-stunnel        : Ws-stunnel Service is "$red"not running (Error)"$NC""      
+fi
+status="$(systemctl show ws-dropbear.service --no-page)"                                      
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)                     
+if [ "${status_text}" == "active" ]                                                     
+then                                                                                    
+echo -e " Ws-dropbear       : Ws-dropbear Service is "$green"running"$NC""                
+else                                                                                    
+echo -e " Ws-dropbear       : Ws-dropbear Service is "$red"not running (Error)"$NC""      
+fi
+status="$(systemctl show edu-ovpn.service --no-page)"                                      
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)                     
+if [ "${status_text}" == "active" ]                                                     
+then                                                                                    
+echo -e " Ws-ovpn           : Ws-ovpn Service is "$green"running"$NC""                
+else                                                                                    
+echo -e " Ws-ovpn           : Ws-ovpn Service is "$red"not running (Error)"$NC""      
+fi
+status="$(systemctl show trojan-go.service --no-page)"                                      
+status_text=$(echo "${status}" | grep 'ActiveState=' | cut -f2 -d=)                     
+if [ "${status_text}" == "active" ]                                                     
+then                                                                                    
+echo -e " Trojan-go         : Trojan-go Service is "$green"running"$NC""                
+else                                                                                    
+echo -e " Trojan-go         : Trojan-go Service is "$red"not running (Error)"$NC""      
+fi
